@@ -342,12 +342,12 @@ function getRequiredHoursPerMonth(textFile, rateFile, bonusCount, driverID, mont
         let dayName = dayNames[dateObj.getDay()];
         if (dayName === dayOff) continue;
 
-        // Check Eid period
+        //Check Eid period
         let [year, m, day] = date.split("-").map(Number);
         if (year === 2025 && m === 4 && day >= 10 && day <= 30) {
             totalSeconds += 6 * 3600;
         } else {
-            totalSeconds += (8 * 3600) + (24 * 60);
+            totalSeconds += (8*3600) + (24 * 60);
         }
     }
 
@@ -429,4 +429,3 @@ module.exports = {
     getRequiredHoursPerMonth,
     getNetPay
 };
-
