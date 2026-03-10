@@ -429,3 +429,4 @@ module.exports = {
     getRequiredHoursPerMonth,
     getNetPay
 };
+
